@@ -1,0 +1,14 @@
+@import url('./base/variables.css');
+@import url('./base/reset.css');
+@import url('./layout/header.css');
+@import url('./layout/footer.css');
+@import url('./components/buttons.css');
+@import url('./pages/home.css');
+@import url('./pages/about.css');
+@import url('./pages/services.css');
+@import url('./pages/compliance.css');
+@import url('./pages/learners.css');
+@import url('./pages/contact.css');
+@import url('./pages/projects.css');
+@import url('./pages/portal.css');
+@import url('./layout/responsive.css');

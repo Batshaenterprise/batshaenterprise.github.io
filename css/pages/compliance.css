@@ -1,0 +1,24 @@
+.compliance-section { padding-bottom: 0; }
+.compliance-hero { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 52px; align-items: center; margin-top: 44px; padding: 36px; background: linear-gradient(120deg, #eef5ff, #fffdf8 58%, #f1f8f4); border: 1px solid var(--line); border-radius: 3px; }
+.compliance-badge { background: #fff; border: 1px solid var(--line); border-left: 6px solid var(--green); padding: 30px; box-shadow: 0 14px 34px rgba(23,32,51,0.07); }
+.compliance-badge-icon { width: 74px; height: 74px; display: grid; place-items: center; margin-bottom: 22px; background: #eef8f1; color: var(--green); font-size: 2.4rem; border: 1px solid rgba(47,158,104,0.22); border-radius: 3px; }
+.compliance-badge h2 { margin: 0 0 12px; color: var(--blue-deep); font-size: 2rem; line-height: 1.05; }
+.compliance-badge p, .compliance-intro p, .learning-card p, .proof-card p { color: var(--ink-soft); text-align: left; }
+.compliance-intro .section-title { margin-bottom: 14px; }
+.trust-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 28px; }
+.trust-pill { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--blue); padding: 16px 14px; font-weight: 800; color: var(--blue-deep); text-align: center; border-radius: 3px; box-shadow: 0 8px 18px rgba(23,32,51,0.05); }
+.trust-pill:nth-child(2) { border-top-color: var(--green); } .trust-pill:nth-child(3) { border-top-color: var(--yellow); } .trust-pill:nth-child(4) { border-top-color: var(--red); }
+.compliance-learning { margin-top: 44px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.learning-card { background: #fff; border: 1px solid var(--line); border-radius: 3px; padding: 24px; box-shadow: 0 12px 24px rgba(23,32,51,0.06); }
+.learning-card h3 { margin: 0 0 16px; font-size: 1.55rem; color: var(--blue-deep); }
+.proof-list { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.proof-list li { display: grid; grid-template-columns: 34px 1fr; gap: 12px; align-items: start; margin: 0; padding: 14px; background: #f8fbff; border: 1px solid rgba(23,78,166,0.10); border-radius: 3px; color: var(--ink-soft); }
+.proof-icon { width: 30px; height: 30px; display: inline-grid; place-items: center; background: #eef8f1; color: var(--green); border: 1px solid rgba(47,158,104,0.22); border-radius: 3px; font-size: 1rem; line-height: 1; }
+.proof-card { display: grid; grid-template-columns: 76px 1fr; gap: 16px; align-items: start; margin-bottom: 16px; padding: 16px; background: #fffdf8; border: 1px solid var(--line); border-left: 5px solid var(--green); border-radius: 3px; }
+.proof-card:nth-child(2) { border-left-color: var(--blue); } .proof-card:nth-child(3) { border-left-color: var(--yellow); } .proof-card:nth-child(4) { border-left-color: var(--red); }
+.proof-card strong { display: block; margin-bottom: 4px; color: var(--blue-deep); font-size: 1.05rem; }
+.proof-card p { margin: 0; }
+.proof-number { width: 58px; height: 58px; display: grid; place-items: center; background: var(--mist); color: var(--blue-deep); border: 1px solid rgba(23,78,166,0.16); font-size: 1.15rem; font-weight: 900; border-radius: 3px; }
+.confidence { margin-top: 56px; background: linear-gradient(90deg, #e8f2ff, #eef8f1); padding: 52px 20px; text-align: center; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.confidence h2 { color: var(--blue); font-size: 2.6rem; margin: 0 0 10px; }
+.confidence p { max-width: 900px; margin: 0 auto; color: var(--ink-soft); text-align: center; }

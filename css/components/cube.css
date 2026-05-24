@@ -1,0 +1,9 @@
+.brand-cube { flex: 0 0 auto; width: 0.95em; height: 0.95em; margin-left: 0.42rem; vertical-align: -0.12em; transform-origin: center; }
+.cube-top { fill: #ffc7c2; }
+.cube-front { fill: var(--red); }
+.cube-side { fill: #9e3030; }
+.cube-line { stroke: rgba(23,32,51,0.16); stroke-width: 1.4; }
+.subpage-anticlockwise .nav .brand-cube { animation: rotateNavCubeAnticlockwise 6s linear infinite; }
+.hero-cube { width: 76px; height: 76px; margin-bottom: 30px; animation: rotateHeroCubeClockwise 7s linear infinite; transform-origin: center; }
+@keyframes rotateNavCubeAnticlockwise { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+@keyframes rotateHeroCubeClockwise { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }

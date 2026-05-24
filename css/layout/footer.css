@@ -1,0 +1,26 @@
+.footer { background: #eef2f6; color: var(--ink); padding: 54px 0 24px; border-top: 1px solid var(--line); }
+.footer.blue-footer { background: linear-gradient(90deg, #e8f2ff, #edf8f0); }
+.footer-grid { width: min(var(--max), calc(100% - 72px)); margin: 0 auto; display: grid; grid-template-columns: 1.5fr 0.75fr 0.95fr 0.85fr; gap: 52px; }
+.footer h3, .footer .brand { margin: 0 0 14px; color: var(--blue-deep); }
+.footer .brand-banner { margin-bottom: 18px; }
+.footer p { margin: 0 0 12px; color: var(--ink-soft); text-align: justify; }
+.footer-grid > div:first-child p { text-align: left; }
+.footer a { display: block; margin: 14px 0; color: var(--ink-soft); }
+.footer a:hover { color: var(--blue); }
+.socials { width: max-content; display: flex; align-items: center; justify-content: center; gap: 12px; margin: 22px auto 0; color: var(--blue); }
+.social-link { position: relative; width: 42px; height: 42px; min-width: 42px; min-height: 42px; display: inline-flex; align-items: center; justify-content: center; margin: 0; padding: 0; line-height: 1; border-radius: 3px; border: 1px solid rgba(23,78,166,0.18); background: #fff; color: var(--blue); box-shadow: 0 8px 18px rgba(23,32,51,0.08); transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease; }
+.social-link:hover { transform: translateY(-3px); color: #fff; box-shadow: 0 12px 24px rgba(23,32,51,0.16); }
+.social-link[aria-label="Facebook"] { color: #1877f2; }
+.social-link[aria-label="X / Twitter"] { color: #111; }
+.social-link[aria-label="LinkedIn"] { color: #0a66c2; }
+.social-link[aria-label="Phone"] { color: var(--green); }
+.social-link[aria-label="Facebook"]:hover { background: #1877f2; border-color: #1877f2; }
+.social-link[aria-label="X / Twitter"]:hover { background: #111; border-color: #111; }
+.social-link[aria-label="LinkedIn"]:hover { background: #0a66c2; border-color: #0a66c2; }
+.social-link[aria-label="Phone"]:hover { background: var(--green); border-color: var(--green); }
+.social-link svg { position: absolute; top: 50%; left: 50%; width: 19px; height: 19px; fill: currentColor; display: block; transform: translate(-50%, -50%); margin: 0; }
+.social-link[aria-label="LinkedIn"] svg { width: 18px; height: 18px; }
+.social-link[aria-label="Phone"] svg { width: 20px; height: 20px; }
+.social-link[aria-label="Facebook"] svg { width: 18px; height: 18px; }
+.social-link[aria-label="X / Twitter"] svg { width: 17px; height: 17px; }
+.copyright { text-align: center; margin-top: 34px; color: var(--ink-soft); }

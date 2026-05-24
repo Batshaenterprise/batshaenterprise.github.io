@@ -1,0 +1,3 @@
+.projects-page { min-height: 690px; padding-top: 74px; background: #fffdf8; }
+.projects-page em { font-size: 1.2rem; color: var(--ink-soft); }
+.empty-projects { margin-top: 44px; padding: 40px; border: 1px solid var(--line); border-left: 6px solid var(--yellow); background: #fff; border-radius: 3px; }
