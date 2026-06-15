@@ -1,0 +1,229 @@
+.services-page {
+  width: min(1120px, calc(100% - 40px));
+}
+
+.services-hero {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.92fr) minmax(260px, 0.58fr);
+  gap: clamp(28px, 6vw, 72px);
+  align-items: center;
+  margin: 28px 0 46px;
+}
+
+.services-kicker {
+  margin: 0 0 10px;
+  color: var(--blue);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.services-title {
+  margin-bottom: 16px;
+  white-space: normal;
+  font-size: clamp(2rem, 3.6vw, 3.25rem);
+}
+
+.services-hero > p:last-child {
+  max-width: 640px;
+  color: #4b5563;
+  font-size: clamp(1rem, 1.35vw, 1.15rem);
+  line-height: 1.72;
+}
+
+.services-hero > div > p:last-child {
+  max-width: 640px;
+  color: #4b5563;
+  font-size: clamp(1rem, 1.35vw, 1.15rem);
+  line-height: 1.72;
+}
+
+.services-path,
+.compliance-signal {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  padding-left: 28px;
+}
+
+.services-path::before,
+.compliance-signal::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: linear-gradient(var(--blue), var(--green), var(--yellow), var(--red));
+  animation: serviceRail 5.4s ease-in-out infinite;
+}
+
+.services-path span,
+.compliance-signal span {
+  position: relative;
+  display: block;
+  padding: 10px 0 10px 18px;
+  color: #111827;
+  font-size: 0.92rem;
+  font-weight: 900;
+}
+
+.services-path span::before,
+.compliance-signal span::before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: var(--blue);
+  box-shadow: 0 0 0 4px rgba(10, 102, 194, 0.14);
+  transform: translateY(-50%);
+}
+
+.services-path span:nth-child(2)::before,
+.compliance-signal span:nth-child(2)::before { background: var(--green); }
+.services-path span:nth-child(3)::before,
+.compliance-signal span:nth-child(3)::before { background: var(--yellow); }
+.services-path span:nth-child(4)::before,
+.compliance-signal span:nth-child(4)::before { background: var(--red); }
+
+.service-journey {
+  display: grid;
+  gap: clamp(28px, 5vw, 54px);
+}
+
+.service-entry {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.95fr) minmax(300px, 1.05fr);
+  gap: clamp(24px, 5vw, 62px);
+  align-items: center;
+  padding-top: clamp(26px, 4vw, 42px);
+  border-top: 1px solid #dbe3ee;
+}
+
+.service-entry:nth-child(even) .service-media {
+  order: 2;
+}
+
+.service-media {
+  overflow: hidden;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.service-media img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border: 0;
+  border-radius: 4px;
+  transform: scale(1.02);
+  transition: transform 700ms cubic-bezier(0.2, 0.8, 0.2, 1), filter 700ms ease;
+}
+
+.service-entry:hover .service-media img {
+  filter: saturate(1.04) contrast(1.03);
+  transform: scale(1.065);
+}
+
+.service-copy {
+  position: relative;
+  padding-left: 22px;
+}
+
+.service-copy::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 3px;
+  height: 76px;
+  border-radius: 999px;
+  background: var(--blue);
+}
+
+.service-entry:nth-child(2) .service-copy::before {
+  background: var(--green);
+}
+
+.service-entry:nth-child(3) .service-copy::before {
+  background: var(--yellow);
+}
+
+.service-entry:nth-child(4) .service-copy::before {
+  background: var(--red);
+}
+
+.number {
+  display: block;
+  margin-bottom: 16px;
+  color: #8a96aa;
+  font-size: 0.86rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.service-copy h2 {
+  max-width: 560px;
+  margin: 0 0 12px;
+  color: #111827;
+  font-size: clamp(1.55rem, 3vw, 2.75rem);
+  line-height: 1.03;
+  letter-spacing: -0.035em;
+}
+
+.service-copy p {
+  max-width: 560px;
+  margin: 0;
+  color: #4b5563;
+  font-size: clamp(0.98rem, 1.2vw, 1.08rem);
+  line-height: 1.72;
+}
+
+@media (max-width: 900px) {
+  .services-page {
+    width: min(1120px, calc(100% - 32px));
+  }
+
+  .service-entry,
+  .service-entry:nth-child(even),
+  .services-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .service-entry:nth-child(even) .service-media {
+    order: 0;
+  }
+}
+
+@keyframes serviceRail {
+  0%, 100% {
+    opacity: 0.46;
+    transform: scaleY(0.94);
+  }
+
+  50% {
+    opacity: 0.9;
+    transform: scaleY(1);
+  }
+}
+
+@media (max-width: 640px) {
+  .services-page {
+    width: min(1120px, calc(100% - 24px));
+  }
+
+  .services-hero {
+    margin-top: 18px;
+    margin-bottom: 34px;
+  }
+
+  .service-entry {
+    gap: 18px;
+  }
+}
